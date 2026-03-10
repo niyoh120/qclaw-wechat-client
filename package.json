@@ -13,16 +13,31 @@
       }
     }
   },
+  "sideEffects": false,
   "scripts": {
     "build": "tsdown",
     "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm build",
     "demo": "tsx examples/full-flow.ts"
   },
-  "devDependencies": {
-    "@types/ws": "^8.18.1",
-    "tsdown": "^0.21.1",
-    "tsx": "^4.19.0",
-    "typescript": "^5.7.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/photon-hq/qclaw-wechat-client.git"
+  },
+  "homepage": "https://github.com/photon-hq/qclaw-wechat-client#readme",
+  "bugs": {
+    "url": "https://github.com/photon-hq/qclaw-wechat-client/issues"
+  },
+  "keywords": [
+    "qclaw",
+    "wechat",
+    "openclaw",
+    "tencent",
+    "websocket",
+    "api-client"
+  ],
+  "engines": {
+    "node": ">=18"
   },
   "files": [
     "dist",
@@ -32,6 +47,12 @@
   "license": "MIT",
   "dependencies": {
     "ws": "^8.19.0"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.18.1",
+    "tsdown": "^0.21.1",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
