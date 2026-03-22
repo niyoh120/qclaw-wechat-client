@@ -2,6 +2,9 @@
 
 [中文文档](./README.zh-CN.md)
 
+> [!WARNING]
+> This project is being unmaintained. It is recommended to switch to [WeChat's official iLink protocol](https://github.com/photon-hq/wechat-ilink-client). 该项目已不再维护。我们推荐使用[微信团队官方的iLink协议](https://github.com/photon-hq/wechat-ilink-client)（基于微信ClawBot）。
+
 Reverse-engineered TypeScript client for QClaw's WeChat Access API.
 
 QClaw (管家 OpenClaw) is a Tencent Electron desktop app that wraps an OpenClaw AI Gateway service. It authenticates exclusively through WeChat OAuth2 QR-code login and communicates with Tencent backend servers via a jprx gateway protocol. This library implements that protocol as a standalone TypeScript module.
